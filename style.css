@@ -83,7 +83,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(97, 97, 97);
+  background-color: rgb(195, 195, 195);
 }
 
 .menu li {
@@ -115,7 +115,7 @@ body {
     font-size: 22px;
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
     color: white;
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(195, 195, 195);
     font-weight: 800;
   }
 

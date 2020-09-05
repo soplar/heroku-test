@@ -1,0 +1,145 @@
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+  min-height:100%;
+  position:relative;
+}
+
+#header{
+  border: 1px solid #d78521;
+  background-color: #acbed8;
+  color:whitesmoke;
+  padding: 10px;
+}
+
+#article {
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+}
+
+#footer{
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  border: 1px solid #d78521;
+  background-color: #acbed8;
+  color:whitesmoke;
+  height:60px;   /* Height of the footer */
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.headerElement{
+  display: inline-block;
+  top:0;
+  padding: 5px;
+  vertical-align: text-top;
+}
+
+.headerElementRight{
+  position:relative;
+  float:right;
+  top:0;
+  right:0;
+  padding: 5px;
+  vertical-align: bottom;
+}
+
+#winkelNaam{
+  font-size: 8vw;
+  font-family: 'Sofia';
+  font-optical-sizing: auto;
+}
+
+#fietsenLijst{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+/* menu voor desktop */
+.hamburger {
+	display: none;
+}
+
+.menu {
+	width: 100%;
+	height: 60px;
+	background-color: skyblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(97, 97, 97);
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+	
+	.hamburger {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    color: white;
+    background-color: rgb(97, 97, 97);
+    font-weight: 800;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+		height: 60px;
+		overflow: hidden;
+		transition: 0.6s
+  }
+  	
+	.expandMenu {
+		height: 360px;
+		transition: 0.6s;
+	}
+	
+	.rotateBtn {
+		transform: rotate(-90deg);
+    transition: 0.6s;
+    transform: translateX(100);
+  }
+  
+  .menu li {
+    width:100%;
+  }
+}
+
+.checkbox-container{display:flex;}

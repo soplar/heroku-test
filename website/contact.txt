@@ -1,0 +1,7 @@
+=====
+firstname: Jan
+lastname: Jansen
+email: jan@nono.nl
+onderwerp: En we typen wat tekst.
+
+=====

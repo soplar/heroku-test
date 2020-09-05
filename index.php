@@ -13,7 +13,8 @@
         <?php include("menu.php")?>
     </div>
     <div id="article">
-        
+        This is a test app for educational use.
+
     </div>
     <div id="footer">
         <?php include("footer.php")?>
